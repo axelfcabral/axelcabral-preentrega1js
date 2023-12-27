@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url(../fuentes/BebasNeue-Regular.ttf);
+}
+/* estilos header*/
+header {
+  width: 100%;
+  background-color: #232323;
+  height: auto;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px;
+}
+.menu .contenedor__logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.menu .contenedor__logo .texto__logo {
+  font-family: Helvetica, sans-serif;
+  color: #fff;
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 10vh;
+}
+
+.navegacion__nav {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navegacion__nav .nav__item {
+  margin-left: 1vh;
+  margin-top: 3vh;
+}
+.navegacion__nav a {
+  font-family: "BebasNeue-Regular";
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/*tienda*/
+.padre__remeras {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+.padre__remeras .contenedor__card {
+  margin: 0.5vh;
+  width: 50vh;
+}
+.padre__remeras .contenedor__img {
+  object-fit: cover;
+  height: 60vh;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.padre__remeras .remera {
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+.padre__remeras .descripcion {
+  font-family: "BebasNeue-Regular";
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: italic;
+  display: flex;
+  background-color: #232323;
+  margin: 0;
+  border: 1px solid #000;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.padre__remeras .boton__añadir {
+  width: 100%;
+  font-family: "BebasNeue-Regular";
+  font-size: large;
+}
+
+.contenedor__img :hover {
+  transform: scale(1.3);
+}
+
+.boton__añadir :hover {
+  background-color: #fff;
+}
+footer {
+  background-color: #232323;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav__footer {
+  display: grid;
+  margin-top: 5vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "menuf email contacto" "menuf email redes";
+}
+.nav__footer .mf1 {
+  margin-left: 30px;
+}
+.nav__footer .contenedor__nav__footer {
+  grid-area: menuf;
+  font-family: "BebasNeue-Regular";
+  color: #fff;
+  margin: 20px;
+}
+.nav__footer .contenedor__mailcontacto {
+  grid-area: contacto;
+  font-family: "BebasNeue-Regular";
+  color: #fff;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+.nav__footer .contenedor__emailoff {
+  font-family: "BebasNeue-Regular";
+  color: #fff;
+  margin-top: 20px;
+}
+.nav__footer .contenedor__redes__footer {
+  grid-area: redes;
+  margin-left: 10px;
+}
+
+#input-mail-footer {
+  width: 330px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  color: #333;
+}
